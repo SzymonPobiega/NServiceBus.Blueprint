@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routing>
+  <endpoints>
+    <endpoint name="ReplyingToAMessage.Sender">
+    </endpoint>
+    <endpoint name="ReplyingToAMessage.Receiver">
+      <handles>
+        <command type="AcceptanceTests.When_replying_to_a_message+MyRequest, AcceptanceTests" />
+      </handles>
+    </endpoint>
+  </endpoints>
+  <sites>
+    <site name="Green">
+      <endpoint name="ReplyingToAMessage.Sender"/>
+      <router name="Router" interface="Green" />
+    </site>
+    <site name="Blue">
+      <endpoint name="ReplyingToAMessage.Receiver"/>
+      <router name="Router" interface="Blue"/>
+    </site>
+  </sites>
+</routing>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routing>
+  <endpoints>
+    <endpoint name="SendingViaTwoRouters.Sender">
+    </endpoint>
+    <endpoint name="SendingViaTwoRouters.Receiver">
+      <handles>
+        <command type="AcceptanceTests.When_sending_via_two_routers+MyRequest, AcceptanceTests" />
+      </handles>
+    </endpoint>
+  </endpoints>
+  <sites>
+    <site name="Green">
+      <endpoint name="SendingViaTwoRouters.Sender"/>
+      <router name="Green-Blue" interface="Green" />
+    </site>
+    <site name="Blue">
+      <router name="Green-Blue" interface="Blue"/>
+      <router name="Red-Blue" interface="Blue"/>
+    </site>
+    <site name="Red">
+      <endpoint name="SendingViaTwoRouters.Receiver"/>
+      <router name="Red-Blue" interface="Red"/>
+    </site>
+  </sites>
+</routing>

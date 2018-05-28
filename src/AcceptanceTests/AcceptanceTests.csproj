@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="7.0.0-*" />
+    <PackageReference Include="NServiceBus.Router" Version="1.0.0-*" />
+    <PackageReference Include="NServiceBus.Newtonsoft.Json" Version="2.0.0-*" />
+    <PackageReference Include="NServiceBus.AcceptanceTesting" Version="7.0.0-*" />
+    <PackageReference Include="NUnit" Version="3.7.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcceptanceTesting\AcceptanceTesting.csproj" />
+    <ProjectReference Include="..\NServiceBus.BlueprintBasedRouting\NServiceBus.BlueprintBasedRouting.csproj" />
+    <ProjectReference Include="..\NServiceBus.Router.Blueprint\NServiceBus.Router.Blueprint.csproj" />
+    <ProjectReference Include="..\NServiceBus.Blueprint.UrlXml\NServiceBus.Blueprint.UrlXml.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="When_replying_to_a_message.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="When_sending_between_sites.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="When_using_diamond_topology.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="When_sending_via_two_routers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

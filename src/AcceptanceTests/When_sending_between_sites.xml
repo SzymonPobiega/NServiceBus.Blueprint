@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routing>
+  <endpoints>
+    <endpoint name="SendingBetweenSites.Sender">
+    </endpoint>
+    <endpoint name="SendingBetweenSites.Receiver">
+      <handles>
+        <command type="AcceptanceTests.When_sending_between_sites+MyRequest, AcceptanceTests" />
+      </handles>
+    </endpoint>
+  </endpoints>
+  <sites>
+    <site name="Green">
+      <endpoint name="SendingBetweenSites.Sender"/>
+      <router name="Green-Yellow" interface="Green" />
+    </site>
+    <site name="Yellow">
+      <router name="Green-Yellow" interface="Yellow" />
+      <router name="Yellow-Blue" interface="Yellow"/>
+      <router name="Yellow-Red" interface="Yellow"/>
+    </site>
+    <site name="Blue">
+      <endpoint name="SendingBetweenSites.Receiver"/>
+      <router name="Yellow-Blue" interface="Blue"/>
+    </site>
+    <site name="Red">
+      <endpoint name="SendingBetweenSites.Receiver"/>
+      <router name="Yellow-Red" interface="Red"/>
+    </site>
+  </sites>
+</routing>

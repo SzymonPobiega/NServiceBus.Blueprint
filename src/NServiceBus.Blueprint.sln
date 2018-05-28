@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2FC95206-1B2A-4F33-9797-8AA059204D2A}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Blueprint", "NServiceBus.Blueprint\NServiceBus.Blueprint.csproj", "{8010712B-F6CC-4378-80DB-D66EDCA352A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Blueprint.UrlXml", "NServiceBus.Blueprint.UrlXml\NServiceBus.Blueprint.UrlXml.csproj", "{66ED9829-6358-4B2E-94C2-FB8179293697}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.BlueprintBasedRouting", "NServiceBus.BlueprintBasedRouting\NServiceBus.BlueprintBasedRouting.csproj", "{2ED40D79-EFB7-465F-A89E-08307B8D4649}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Router.Blueprint", "NServiceBus.Router.Blueprint\NServiceBus.Router.Blueprint.csproj", "{B9D6554F-3FD3-401D-821B-AA059483DC3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTesting", "AcceptanceTesting\AcceptanceTesting.csproj", "{0F1838F0-4870-45B0-A85C-9197104C6F05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3A44ACF0-10D4-4322-976E-364B8ED98602}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8010712B-F6CC-4378-80DB-D66EDCA352A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8010712B-F6CC-4378-80DB-D66EDCA352A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8010712B-F6CC-4378-80DB-D66EDCA352A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8010712B-F6CC-4378-80DB-D66EDCA352A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66ED9829-6358-4B2E-94C2-FB8179293697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66ED9829-6358-4B2E-94C2-FB8179293697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66ED9829-6358-4B2E-94C2-FB8179293697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66ED9829-6358-4B2E-94C2-FB8179293697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED40D79-EFB7-465F-A89E-08307B8D4649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED40D79-EFB7-465F-A89E-08307B8D4649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED40D79-EFB7-465F-A89E-08307B8D4649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED40D79-EFB7-465F-A89E-08307B8D4649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D6554F-3FD3-401D-821B-AA059483DC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D6554F-3FD3-401D-821B-AA059483DC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D6554F-3FD3-401D-821B-AA059483DC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D6554F-3FD3-401D-821B-AA059483DC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1838F0-4870-45B0-A85C-9197104C6F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1838F0-4870-45B0-A85C-9197104C6F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1838F0-4870-45B0-A85C-9197104C6F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1838F0-4870-45B0-A85C-9197104C6F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F1838F0-4870-45B0-A85C-9197104C6F05} = {3A44ACF0-10D4-4322-976E-364B8ED98602}
+		{C8F237B3-12DF-4FB0-9C66-5E4F3FFF01C7} = {3A44ACF0-10D4-4322-976E-364B8ED98602}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F146A5AC-8618-4967-A758-8FB3980BC90F}
+	EndGlobalSection
+EndGlobal
