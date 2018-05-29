@@ -6,9 +6,8 @@
     <Company>Szymon Pobiega Consulting</Company>
     <PackageLicenseUrl>https://github.com/SzymonPobiega/NServiceBus.Blueprint/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright 2010-$([System.DateTime]::UtcNow.ToString(yyyy)) Szymon Pobiega. All rights reserved</Copyright>
+    <Copyright>Copyright 2017-$([System.DateTime]::UtcNow.ToString(yyyy)) Szymon Pobiega. All rights reserved</Copyright>
     <PackageTags>nservicebus messages blueprint</PackageTags>
-    <PackageIconUrl>https://Blueprint.githubusercontent.com/SzymonPobiega/NServiceBus.Blueprint/master/icons/blueprint.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/SzymonPobiega/NServiceBus.Blueprint</PackageProjectUrl>
     <PackageOutputPath>..\..\nugets</PackageOutputPath>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

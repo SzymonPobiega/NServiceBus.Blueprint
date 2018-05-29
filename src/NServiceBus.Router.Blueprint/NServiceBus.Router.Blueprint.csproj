@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NServiceBus.Blueprint\NServiceBus.Blueprint.csproj" />
-    <PackageReference Include="NServiceBus.Router" Version="1.0.0-*" />
+    <PackageReference Include="NServiceBus.Router" Version="[1.0.0, 2.0.0)" />
   </ItemGroup>
 
   <PropertyGroup>
