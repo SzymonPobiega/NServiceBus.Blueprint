@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routing>
+  <endpoints>
+    <endpoint name="TwoRoutesExist.Sender">
+    </endpoint>
+    <endpoint name="TwoRoutesExist.Receiver">
+      <handles>
+        <command type="AcceptanceTests.When_two_routes_exist+MyRequest, AcceptanceTests" />
+      </handles>
+    </endpoint>
+  </endpoints>
+  <sites>
+    <site name="Green">
+      <endpoint name="TwoRoutesExist.Sender"/>
+      <router name="Green-Blue" interface="Green" />
+      <router name="Green-Red" interface="Green" />
+    </site>
+    <site name="Blue">
+      <router name="Green-Blue" interface="Blue"/>
+      <router name="Red-Blue" interface="Blue"/>
+    </site>
+    <site name="Red">
+      <endpoint name="TwoRoutesExist.Receiver"/>
+      <router name="Red-Blue" interface="Red"/>
+      <router name="Green-Red" interface="Red"/>
+    </site>
+  </sites>
+</routing>

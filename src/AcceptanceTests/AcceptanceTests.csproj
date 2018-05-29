@@ -24,6 +24,9 @@
     <None Update="When_sending_between_sites.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="When_two_routes_exist.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="When_using_diamond_topology.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

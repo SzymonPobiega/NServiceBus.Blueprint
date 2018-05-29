@@ -36,6 +36,9 @@ namespace NServiceBus
             fileUri = routingFileUri;
         }
 
+        /// <summary>
+        /// Creates an instance of the blueprint access based on the configuration.
+        /// </summary>
         public override IBlueprintAccess Create()
         {
             return new UrlXmlBlueprintAccess(fileUri, interval);

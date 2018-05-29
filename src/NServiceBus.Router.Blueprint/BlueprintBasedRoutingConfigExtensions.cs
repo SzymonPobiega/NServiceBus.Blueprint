@@ -2,8 +2,14 @@
 {
     using Blueprint;
 
+    /// <summary>
+    /// Configures the router to use blueprint-based routing protocol.
+    /// </summary>
     public static class BlueprintBasedRoutingConfigExtensions
     {
+        /// <summary>
+        /// Configures the router to use blueprint-based routing protocol.
+        /// </summary>
         public static T UseMapBasedRoutingProtocol<T>(this RouterConfiguration config)
             where T : BlueprintAccessConfiguration, new()
         {

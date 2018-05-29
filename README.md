@@ -2,7 +2,7 @@
 
 # NServiceBus.Blueprint
 
-A holistic approach to NServiceBus routing using a single centralized description of the entire system.
+A model for building blueprints of complex multi-data centre NServiceBus-based distributed systems
 
 ## Icon
 
